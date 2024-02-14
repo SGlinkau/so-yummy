@@ -1,0 +1,2 @@
+NPM Start prowadzi na http://localhost:3000/ natomiast strona de facto działa pod adresem http://localhost:3000/so-yummy/welcome
+Tak na dobry początek mały "routing" :)
