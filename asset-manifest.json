@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.c3d5249d.css",
-    "main.js": "/static/js/main.c68e6f5c.js",
-    "static/media/start-page-desktop@2x.jpg": "/static/media/start-page-desktop@2x.f9fd1b84a264be4c77f8.jpg",
-    "static/media/start-page-tablet@2x.jpg": "/static/media/start-page-tablet@2x.d9db385f866bf51df61d.jpg",
-    "static/media/start-page-mob@2x.jpg": "/static/media/start-page-mob@2x.a834126e23a09c78a793.jpg",
-    "static/media/start-page-desktop.jpg": "/static/media/start-page-desktop.d54e9f29d2a92f7932c6.jpg",
-    "static/media/start-page-tablet.jpg": "/static/media/start-page-tablet.0d873aecd38c5fe27eb7.jpg",
-    "static/media/start-page-mob.jpg": "/static/media/start-page-mob.4a632256a42ae33d1871.jpg",
-    "index.html": "/index.html",
-    "static/media/logo.svg": "/static/media/logo.730141656e2fa293a2ae7c83da54bb81.svg",
-    "main.c3d5249d.css.map": "/static/css/main.c3d5249d.css.map",
-    "main.c68e6f5c.js.map": "/static/js/main.c68e6f5c.js.map"
+    "main.css": "/so-yummy/static/css/main.c3d5249d.css",
+    "main.js": "/so-yummy/static/js/main.5c921197.js",
+    "static/media/start-page-desktop@2x.jpg": "/so-yummy/static/media/start-page-desktop@2x.f9fd1b84a264be4c77f8.jpg",
+    "static/media/start-page-tablet@2x.jpg": "/so-yummy/static/media/start-page-tablet@2x.d9db385f866bf51df61d.jpg",
+    "static/media/start-page-mob@2x.jpg": "/so-yummy/static/media/start-page-mob@2x.a834126e23a09c78a793.jpg",
+    "static/media/start-page-desktop.jpg": "/so-yummy/static/media/start-page-desktop.d54e9f29d2a92f7932c6.jpg",
+    "static/media/start-page-tablet.jpg": "/so-yummy/static/media/start-page-tablet.0d873aecd38c5fe27eb7.jpg",
+    "static/media/start-page-mob.jpg": "/so-yummy/static/media/start-page-mob.4a632256a42ae33d1871.jpg",
+    "index.html": "/so-yummy/index.html",
+    "static/media/logo.svg": "/so-yummy/static/media/logo.730141656e2fa293a2ae7c83da54bb81.svg",
+    "main.c3d5249d.css.map": "/so-yummy/static/css/main.c3d5249d.css.map",
+    "main.5c921197.js.map": "/so-yummy/static/js/main.5c921197.js.map"
   },
   "entrypoints": [
     "static/css/main.c3d5249d.css",
-    "static/js/main.c68e6f5c.js"
+    "static/js/main.5c921197.js"
   ]
 }
