@@ -1,6 +1,6 @@
 import express from 'express';
 
-import { getRecipesListMainPage } from 'controllers/mainPageRecipes';
+import { getRecipesListMainPage } from 'controllers/recipes/mainPageRecipes';
 
 const router = express.Router();
 
