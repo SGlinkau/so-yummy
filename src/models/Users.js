@@ -9,6 +9,8 @@ const userSchema = new mongoose.Schema(
     },
     password: {
       type: String,
+      minlength: 4,
+      maxlength: 20,
       required: [true, 'Field password is required'],
     },
     email: {
@@ -23,7 +25,7 @@ const userSchema = new mongoose.Schema(
     avatarURL: {
       type: String,
       default:
-        'https://res.cloudinary.com/de4niywwl/image/upload/ar_1:1,c_fill,e_art:hokusai,g_auto,w_100/v1708030468/cld-sample-4.jpg',
+        'https://res.cloudinary.com/de4niywwl/image/upload/ar_1:1,c_fill,e_art:hokusai,g_auto,w_200/v1708030468/cld-sample-4.jpg',
     },
     subscription: {
       type: Boolean,
@@ -34,6 +36,10 @@ const userSchema = new mongoose.Schema(
       default: false,
     },
     verificationToken: {
+      type: String,
+      default: null,
+    },
+    refreshToken: {
       type: String,
       default: null,
     },
