@@ -2,15 +2,22 @@ import React, { useState } from 'react';
 
 import css from './SearchForm.module.css';
 
-const SearchForm = ({ bgButtonColor, onSubmit }) => {
+const SearchForm = ({ onSubmit, bgButtonColor }) => {
   const [inputValue, setInputValue] = useState('');
+
   const handleSubmit = event => {
     event.preventDefault();
-    onSubmit(inputValue);
+    if (inputValue.trim() !== '') {
+      onSubmit(inputValue.trim().toLocaleLowerCase());
+    }
   };
 
   const handleChange = event => {
     setInputValue(event.target.value);
+  };
+
+  const handleFocus = () => {
+    setInputValue('');
   };
 
   const buttonStyle = {
@@ -25,6 +32,7 @@ const SearchForm = ({ bgButtonColor, onSubmit }) => {
           type="text"
           value={inputValue}
           onChange={handleChange}
+          onFocus={handleFocus}
           placeholder="Beef"
         />
         <button type="submit" style={buttonStyle} className={css.form__button}>
