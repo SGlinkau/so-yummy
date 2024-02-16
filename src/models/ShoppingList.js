@@ -25,7 +25,7 @@ const shoppingListSchema = new Schema(
   },
   { versionKey: false, timestamps: true }
 );
-
-const ShoppingListModel = mongoose.model('shopping-list', shoppingListSchema);
+//poprawka var name
+const ShoppingList = mongoose.model('shopping-list', shoppingListSchema);
 
 module.exports = ShoppingList;
