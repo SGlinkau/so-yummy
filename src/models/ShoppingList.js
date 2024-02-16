@@ -28,4 +28,4 @@ const shoppingListSchema = new Schema(
 
 const ShoppingListModel = mongoose.model('shopping-list', shoppingListSchema);
 
-module.exports = ShoppingListModel;
+module.exports = ShoppingList;
