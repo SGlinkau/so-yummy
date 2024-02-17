@@ -31,8 +31,8 @@ const recipeSchema = new mongoose.Schema(
       required: [true, 'Title is required'],
     },
     favorites: {
-      type: Boolean,
-      default: false,
+      type: Array,
+      default: [],
     },
     youtube: String,
     tags: [String],
