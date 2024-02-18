@@ -6,6 +6,7 @@ import { GlobalStyle } from './GlobalStyle';
 import WelcomePage from '../pages/WelcomePage/WelcomePage';
 import { Route, Routes } from 'react-router';
 import { Navigation } from './Navigation/Navigation';
+import { Outlet, NavLink } from 'react-router-dom';
 
 export const App = () => {
   const [isToggleOn, setIsToggleOn] = useState(() => {
@@ -34,14 +35,25 @@ export const App = () => {
       <GlobalStyle />
       <Routes>
         <Route path="/welcome" element={<WelcomePage />} />
-        <Route path="/" element={<Navigation />} >
-          <Route path="/home" element={<cos />} />
-          <Route path="/categories" element={<cos />} />
-          <Route path="/add" element={<cos />} />
-          <Route path="/my" element={<cos />} />
-          <Route path="/favorite" element={<cos />} />
-          <Route path="/shopping-list" element={<cos />} />
-          <Route path="/search" element={<cos />} />
+        <Route path="/" element={<Navigation />}>
+          <Route path="home" element={<cos />} />
+          <Route
+            path="categories"
+            element={
+              <div>
+                <NavLink to="category">nazwa kategori</NavLink>
+                <Outlet />
+              </div>
+            }
+          >
+            <Route path="category" element={<np Breakfast />} />
+          </Route>
+          <Route path="add" element={<cos />} />
+          <Route path="my" element={<cos />} />
+          <Route path="favorite" element={<cos />} />
+          <Route path="shopping-list" element={<cos />} />
+          <Route path="search" element={<cos />} />
+          <Route path="recipe/:_id" element={<cos />} />
           <Route path="*" element={<cos />} />
         </Route>
       </Routes>
