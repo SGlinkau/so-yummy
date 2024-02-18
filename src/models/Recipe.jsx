@@ -36,10 +36,19 @@ const recipeSchema = new mongoose.Schema(
     },
     youtube: String,
     tags: [String],
-    ingredients: {
-      type: String,
-      required: [true, 'Title is required'],
-    },
+    ingredients: [
+      {
+        id: {
+          type: mongoose.Types.ObjectId,
+          ref: 'ingredient',
+        },
+        measure: {
+          type: String,
+          required: [true, 'Measure is required'],
+        },
+        _id: false,
+      },
+    ],
   },
   { versionKey: false, timestamps: true }
 );
