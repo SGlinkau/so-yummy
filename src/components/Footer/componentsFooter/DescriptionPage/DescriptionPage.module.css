@@ -1,0 +1,52 @@
+.link {
+  text-decoration: none;
+  color: #fafafa;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.015em;
+}
+
+.description__list {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .description__list {
+    display: block;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    list-style-type: disc;
+  }
+
+  .description__item {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .description {
+    gap: 30px;
+    width: 330px;
+  }
+}
