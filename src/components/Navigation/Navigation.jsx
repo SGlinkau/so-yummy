@@ -1,3 +1,4 @@
+import Footer from 'components/Footer/Footer';
 import { NavLink, Outlet } from 'react-router-dom';
 
 export const Navigation = () => {
@@ -31,7 +32,7 @@ export const Navigation = () => {
         </nav>
       </header>
       <Outlet />
-      
+      <Footer/>
     </div>
   );
 };
