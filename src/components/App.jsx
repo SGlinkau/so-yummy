@@ -2,11 +2,13 @@ import { useEffect, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from '../utils/theme';
 import { GlobalStyle } from './GlobalStyle';
-
-import WelcomePage from '../pages/WelcomePage/WelcomePage';
 import { Route, Routes } from 'react-router';
 import { Navigation } from './Navigation/Navigation';
 import { Outlet, NavLink } from 'react-router-dom';
+
+import WelcomePage from '../pages/WelcomePage/WelcomePage';
+import Register from '../pages/Register/Register';
+import SignIn from '../pages/SignIn/SignIn';
 
 export const App = () => {
   const [isToggleOn, setIsToggleOn] = useState(() => {
@@ -35,6 +37,8 @@ export const App = () => {
       <GlobalStyle />
       <Routes>
         <Route path="/welcome" element={<WelcomePage />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/signin" element={<SignIn />} />
         <Route path="/" element={<Navigation />}>
           <Route path="home" element={<cos />} />
           <Route
