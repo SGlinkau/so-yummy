@@ -1,0 +1,28 @@
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: #8baa36;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__list {
+    font-size: 14px;
+    line-height: 18px;
+    gap: 20px;
+  }
+}
