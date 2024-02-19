@@ -31,6 +31,7 @@ export const Navigation = () => {
         </nav>
       </header>
       <Outlet />
+      
     </div>
   );
 };
