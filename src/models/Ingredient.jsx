@@ -1,19 +1,14 @@
-const { model, Schema } = require('mongoose');
+import mongoose from 'mongoose';
 
-const ingredientSchema = Schema(
+const ingredientSchema = new mongoose.Schema(
   {
     title: {
       type: String,
       required: [true, 'Title is required'],
-      minlength: 3,
     },
-    desc: {
+    description: {
       type: String,
       required: [true, 'Description is required'],
-    },
-    quantity: {
-      type: String,
-      default: '',
     },
     thumb: {
       type: String,
@@ -24,8 +19,10 @@ const ingredientSchema = Schema(
   { versionKey: false, timestamps: true }
 );
 
-const Ingredient = model('ingredient', ingredientSchema);
+const Ingredient = mongoose.model(
+  'ingredient',
+  ingredientSchema,
+  'ingredients'
+);
 
-module.exports = {
-  Ingredient,
-};
+export default Ingredient;
